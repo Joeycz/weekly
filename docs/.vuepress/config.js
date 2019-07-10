@@ -19,12 +19,20 @@ module.exports = {
   base: '/weekly/',
   themeConfig: {
     repo: "joeycz/see",
+    nav: [
+      { text: 'Issues', link: 'https://github.com/Joeycz/weekly/issues' },
+      // { text: '实验室', link: '/lab/' },
+    ],
     lastUpdated: 'Last Updated',
     docsDir: 'docs',
-    // algolia: {
-    //   apiKey: 'c24a04d935a551b1ebef6d3f1ea64310',
-    //   indexName: '*'
-    // },
+    algolia: {
+      apiKey: '98c2ed99c477c687cdeb6a5652ea3609',
+      appId: 'IZ00C6K004',
+      indexName: 'weekly',
+      algoliaOptions: {
+        hitsPerPage: 10,
+      },
+    },
     sidebar: [
       ["/", "介绍"],
       {
