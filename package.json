@@ -1,0 +1,22 @@
+{
+  "name": "see",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "d": "sh deploy.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joeycz/see.git"
+  },
+  "author": "chengzheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joeycz/see/issues"
+  },
+  "homepage": "https://github.com/Joeycz/see#readme"
+}
