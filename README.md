@@ -3,6 +3,7 @@
 这里记录过去一周看到的一些有趣的文章和项目，记在这里本来留作记录，也作为分享，希望能起到扩展知识，开阔眼界的作用。如果大家有什么好玩有趣的东西，也可以分享给我。
 
 ### 2019年七月
+- [2019.07.26](https://joeycz.github.io/weekly/2019/07/04.html)
 - [2019.07.19](https://joeycz.github.io/weekly/2019/07/03.html)
 - [2019.07.12](https://joeycz.github.io/weekly/2019/07/02.html)
 - [2019.07.05](https://joeycz.github.io/weekly/2019/07/01.html)

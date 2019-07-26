@@ -18,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/Joeycz/see/issues"
   },
-  "homepage": "https://github.com/Joeycz/see#readme"
+  "homepage": "https://github.com/Joeycz/see#readme",
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.0-rc.1",
+    "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
+    "vuepress": "^1.0.2",
+    "vuepress-plugin-rss-support": "^1.1.1"
+  }
 }

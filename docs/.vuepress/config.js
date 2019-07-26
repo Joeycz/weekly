@@ -8,7 +8,10 @@ module.exports = {
   ],
   ga: 'UA-138562707-1',
   plugins: [
-    ['@vuepress/google-analytics'],
+    ['@vuepress/back-to-top'],
+    ['@vuepress/google-analytics', {
+      ga: 'UA-138562707-1'
+    }],
     ['vuepress-plugin-rss-support', {
       site_url: 'https://joeycz.github.io/weekly',
       filter: page => /^\/201.+/.test(page.path),
@@ -18,7 +21,7 @@ module.exports = {
   ],
   base: '/weekly/',
   themeConfig: {
-    repo: "joeycz/see",
+    repo: "joeycz/weekly",
     nav: [
       { text: 'Issues', link: 'https://github.com/Joeycz/weekly/issues' },
       // { text: '实验室', link: '/lab/' },
@@ -26,12 +29,9 @@ module.exports = {
     lastUpdated: 'Last Updated',
     docsDir: 'docs',
     algolia: {
-      apiKey: '98c2ed99c477c687cdeb6a5652ea3609',
+      apiKey: '1f8d46a526f088f574c9fcd02a5fa0ce',
       appId: 'IZ00C6K004',
-      indexName: 'weekly',
-      algoliaOptions: {
-        hitsPerPage: 10,
-      },
+      indexName: 'weekly'
     },
     sidebar: [
       ["/", "介绍"],
