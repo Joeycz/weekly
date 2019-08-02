@@ -1,93 +1,11 @@
-### 2019.07.26
+### 2019.08.02
 
-1. Smashtest是一种用于快速描述和部署测试用例的语言。号称写测试用例要比之前快10倍。
-	
-	[https://smashtest.io/](https://smashtest.io/)
+1. W3C一直负责网络的发展，发展和进步，甚至是宣传。多年来，它已发展成为一个完全成熟的全球性组织，拥有丰富的流程和程序。即使在今天，伯纳斯 - 李正在努力确保网络保持开放。
 
-	![https://smashtest.io/ss2.jpg](https://smashtest.io/ss2.jpg)
+	[https://thehistoryoftheweb.com/opening-up-the-web/](https://thehistoryoftheweb.com/opening-up-the-web/)
 
-2. Osgood 遵循最小特权理论，处于安全考虑，使用 rust 和 v8 打造轻量版本的 node，限制 I / O 权限，使得 HTTP 服务更加安全。
+	![](https://raw.githubusercontent.com/Joeycz/pics/master/1_RoM7DN0zPM38lNgFQjQQ_Q.jpeg)
 
-	[https://dev.to/tlhunter/introducing-osgood-4k1m](https://dev.to/tlhunter/introducing-osgood-4k1m)
+1. 一份可视化的2019中国互联网报告
 
-	```js
-	// app.js
-
-	// global configuration
-	app.interface = '0.0.0.0';
-	app.port = 3000;
-
-	app.get('/user/:username', './worker.js', (policy) => {
-		policy.outboundHttp.allowGet('https://api.github.com/users/*/gists');
-		policy.outboundHttp.allowGet('https://api.github.com/users/*/repos');
-
-		policy.outboundHttp.allowGet('http://couchdb.local:5984/users/*');
-		policy.outboundHttp.allowPut('http://couchdb.local:5984/users/*');
-		policy.outboundHttp.allowPost('http://couchdb.local:5984/users');
-		policy.outboundHttp.allowDelete('http://couchdb.local:5984/users/*');
-	});
-	```
-
-3. 周董跟蔡较劲，其实“周杰伦”三个字对一个音乐播放器而言意味着15%的DAU（日活跃用户）增幅，这一点就很少有歌手可以超越。最近想听一些周董的歌，发现只有腾讯系的播放器可以找到，而且都需要会员，音乐又开始有价格了，这可能会提高人们的幸福感，因为难以得到的才可能被珍惜。
-
-	[https://mp.weixin.qq.com/s/FgRlhIh1CBS_sg7ukT8nyw](https://mp.weixin.qq.com/s/FgRlhIh1CBS_sg7ukT8nyw)
-
-	![](https://cdn.sinaimg.cn.52ecy.cn/large/005BYqpgly1g59l6hdq2ej30jr0emmye.jpg)
-
-4. async / await 的异常处理，try / catch 并不是最好的方式
-
-	[http://thecodebarbarian.com/async-await-error-handling-in-javascript.html](http://thecodebarbarian.com/async-await-error-handling-in-javascript.html)
-
-5. 使用 Svelte 3 开发一个 TODO List
-
-	[https://freshman.tech/svelte-todo/](https://freshman.tech/svelte-todo/)
-
-6. Color Thief: 抓取图片主色调的 javascript 库
-
-	[https://lokeshdhakar.com/projects/color-thief/](https://lokeshdhakar.com/projects/color-thief/)
-
-	![](https://cdn.sinaimg.cn.52ecy.cn/large/005BYqpgly1g59n9g2787j30iw0ot0vr.jpg)
-
-7. 安全的 HTTP 头
-
-	[https://nullsweep.com/http-security-headers-a-complete-guide/](https://nullsweep.com/http-security-headers-a-complete-guide/)
-
-	下边是一段 Nginx 配置的示例：
-
-	```bash
-	## CSP
-	add_header Content-Security-Policy: default-src 'self'; img-src 'self' https://i.imgur.com; object-src 'none'; script-src 'self'; style-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self';
-
-	## General Security Headers
-	add_header X-XSS-Protection: 1; mode=block;
-	add_header Access-Control-Allow-Origin: http://www.one.site.com;
-	add_header X-Frame-Options: deny;
-	add_header X-Content-Type-Options: nosniff;
-	add_header Strict-Transport-Security: max-age=3600; includeSubDomains;
-
-	## Caching rules
-	# Don’t cache by default
-	add_header Cache-Control no-cache;
-	add_header Expires: 0;
-
-	# Cache static assets for 1 day
-	location ~* \.(?:ico|css|js|gif|jpe?g|png|svg|woff|ttf|eot)$ {
-			try_files $uri @rewriteapp;
-			add_header Cache-Control "max-age=86400, public";
-	}
-	```
-
-8. Think in Math. Write in Code. 道理似乎很明显，语言只是工具，数学才是思想。
-
-	[https://justinmeiners.github.io/think-in-math/](https://justinmeiners.github.io/think-in-math/)
-
-9. picgo 是一个图床工具，支持：
-	- 七牛图床 v1.0
-	- 腾讯云COS v4\v5版本 v1.1 & v1.5.0
-	- 又拍云 v1.2.0
-	- GitHub v1.5.0
-	- SM.MS v1.5.1
-	- 阿里云OSS v1.6.0
-	- Imgur v1.6.0
-
-	[https://github.com/Molunerfinn/PicGo](https://github.com/Molunerfinn/PicGo)
+	[https://www.scmp.com/china-internet-report](https://www.scmp.com/china-internet-report)
