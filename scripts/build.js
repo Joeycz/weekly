@@ -1,5 +1,23 @@
 const { resolve } = require("path");
 const { existsSync, lstatSync, readdirSync } = require("fs");
+let currentIssue = 0;
+
+function getAllIssueDocs (year) {
+  const dirPath = resolve(`./docs/${year}`);
+  const files = readdirSync(dirPath);
+  let issues = {}
+  files.forEach((item, index) => {
+    const itemArray = readdirSync(`./docs/${year}/${item}`)
+    issues[`${year}_${item}`] = itemArray.map((ele, i) => {
+      const re = i + 1
+      return re + currentIssue
+    })
+    currentIssue = currentIssue + itemArray.length
+  });
+  return issues;
+}
+
+const issues = getAllIssueDocs('2019')
 
 function readFileList(year, issue) {
   const fileList = [];
@@ -10,11 +28,11 @@ function readFileList(year, issue) {
   }
 
   const files = readdirSync(dirPath);
-  files.forEach((item) => {
+  files.forEach((item, index) => {
     const currentFile = item.slice(0, 2);
     fileList.push([
       `/${year}/${issue}/${currentFile}`,
-      `${year}年${issue}月${currentFile}期`,
+      `${year}年${issue}月${currentFile}期（第${issues[`${year}_${issue}`][index]}期）`,
     ]);
   });
   return fileList.reverse();
@@ -40,6 +58,7 @@ function readOldBlogs() {
 }
 
 module.exports = {
+  getAllIssueDocs,
   readFileList,
   readOldBlogs,
 };

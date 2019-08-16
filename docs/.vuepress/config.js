@@ -1,4 +1,4 @@
-const {readFileList, readOldBlogs} = require('../../scripts/build.js');
+const {readFileList, readOldBlogs, getAllIssueDocs} = require('../../scripts/build.js');
 
 module.exports = {
   title: "每周记录SEE",
