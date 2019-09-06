@@ -36,6 +36,11 @@ module.exports = {
     sidebar: [
       ["/", "介绍"],
       {
+        title: "2019 年 09 月",
+        collapsable: false,
+        children: readFileList('2019', '09')
+      },
+      {
         title: "2019 年 08 月",
         collapsable: false,
         children: readFileList('2019', '08')
@@ -57,7 +62,7 @@ module.exports = {
       },
       {
         title: "2019 年 04 月",
-        collapsable: false,
+        collapsable: true,
         children: readFileList('2019', '04')
       },
       {
