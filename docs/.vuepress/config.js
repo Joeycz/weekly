@@ -24,6 +24,7 @@ module.exports = {
     repo: "joeycz/weekly",
     nav: [
       { text: 'Issues', link: 'https://github.com/Joeycz/weekly/issues' },
+      { text: 'RSS', link: 'https://joeycz.github.io/weekly/rss.xml' },
       // { text: '实验室', link: '/lab/' },
     ],
     lastUpdated: 'Last Updated',

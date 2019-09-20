@@ -1,51 +1,5 @@
-### 第三十一期（2019.09.13）
+### 第三十二期（2019.09.20）
 
-1. 探索纯前端实现实时的视频帧预览，使用 WebAssembly 结合牛逼的 FFmepg 库做前端视频缩略拼图
+1. 技术胖的2019新版React全家桶免费视频（84集）：一个React视频教程系列
 
-	[https://juejin.im/post/5cf3f2d7f265da1bb7765273](https://juejin.im/post/5cf3f2d7f265da1bb7765273)
-
-2. 分享自己的 web 组件，可惜不支持 vue
-
-	[https://webcomponents.dev/](https://webcomponents.dev/)
-
-	![20190910150129.png](https://raw.githubusercontent.com/Joeycz/pics/master/20190910150129.png)
-
-3. 针对不耐烦的程序员的 JavaScript 教程，本书通过提供尽可能一致的现代视图，使学习新手的难度降低。
-
-	[https://exploringjs.com/impatient-js/toc.html](https://exploringjs.com/impatient-js/toc.html)
-
-4. 基于Vue的表单设计器，让表单开发简单而高效。
-
-	[https://github.com/GavinZhuLei/vue-form-making](https://github.com/GavinZhuLei/vue-form-making)
-
-	![](https://camo.githubusercontent.com/6833ce694f086fddb2b45e2042dae3d14d764e7c/687474703a2f2f746f6f6c732e7869616f79616f6a692e636e2f462e706e67)
-
-5. 学习人工智能 100 天后，我得出 5 个结论
-
-	[https://www.infoq.cn/article/qRMMOUYwzAD8iyQ9vTDY?utm_source=feedly&utm_medium=article](https://www.infoq.cn/article/qRMMOUYwzAD8iyQ9vTDY?utm_source=feedly&utm_medium=article)
-
-6. Google的工程实践文档，Google有许多通用工程实践，涵盖所有语言和所有项目。这些文件代表了我们随着时间的推移开发的各种最佳实践的集体经验。
-
-	[https://github.com/google/eng-practices](https://github.com/google/eng-practices)
-
-7. WXInlinePlayer：随着直播和短视频的兴起，视频由于承担了更大的信息量，因此现在已经是非常主流的运营/产品信息输出方式。但由于国内各个浏览器厂商自身的利益关系所在，他们对HTML5的Video能力做了非常多的限制（参考[复杂帧动画之移动端video采坑实现](https://juejin.im/post/5d513623e51d453b72147600)），为了解决这些问题，我们通过软解FLV的方式实现了WXInlinePlayer。
-
-	[https://player.qiaoz.net/index.html](https://player.qiaoz.net/index.html)
-
-8. MongoDB，再见还是再等等？MongoDB 是时下最受欢迎的数据库之一，许多企业和开发者都将其作为自己的解决方案。但在近日，macOS 平台的开源包管理系统 Homebrew 宣布 Homebrew-core 公式将移除 MongoDB 支持。在过去的一年时间内，包括红帽、英国卫报等在内的多家知名企业也都选择了移除 MongoDB。原因何在？
-
-	[https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651019223&idx=1&sn=14ac1930bc4820bcad8174ca6cfa3af7](https://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&mid=2651019223&idx=1&sn=14ac1930bc4820bcad8174ca6cfa3af7)
-
-9. DeepFaceLab是一种利用机器学习来替换视频中的面部的工具。
-
-	[https://github.com/iperov/DeepFaceLab](https://github.com/iperov/DeepFaceLab)
-
-	![](https://github.com/iperov/DeepFaceLab/raw/master/doc/DFL_welcome.jpg)
-
-10. 由Emscripten编译的OpenCC，以便您可以在浏览器或nodejs上运行它而无需编译。Open Chinese Convert（OpenCC，开放中文转换）是一个开源项目，用于繁体中文和简体中文之间的转换，支持中国大陆，台湾和香港的字符级转换，短语转换，变体转换和区域习语。
-
-	[https://github.com/oyyd/wasm-opencc](https://github.com/oyyd/wasm-opencc)
-
-11. Emscripten是一个LLVM到JavaScript的编译器。它需要LLVM bitcode - 可以使用llvm-gcc（DragonEgg）或clang或者任何其他可以转换为LLVM的语言从C / C ++生成，并将其编译成可以在Web上运行的JavaScript（或者其他地方JavaScript可以运行）。
-
-	[https://github.com/emscripten-core/emscripten](https://github.com/emscripten-core/emscripten)
+	[https://juejin.im/post/5d817a15f265da039929a761](https://juejin.im/post/5d817a15f265da039929a761)
