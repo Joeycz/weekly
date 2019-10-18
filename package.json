@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "d": "sh deploy.sh",
+    "d": "sh deploy.sh && sh scraper.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

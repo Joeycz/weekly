@@ -4,3 +4,4 @@ yarn.lock
 dist
 docs/.vuepress/dist
 coverage
+.env

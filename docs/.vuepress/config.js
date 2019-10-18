@@ -23,16 +23,20 @@ module.exports = {
   themeConfig: {
     repo: "joeycz/weekly",
     nav: [
-      { text: 'Issues', link: 'https://github.com/Joeycz/weekly/issues' },
-      { text: 'RSS', link: 'https://joeycz.github.io/weekly/rss.xml' },
+      { text: '留言', link: 'https://github.com/Joeycz/weekly/issues' },
+      { text: 'RSS订阅', link: 'https://joeycz.github.io/weekly/rss.xml' },
       // { text: '实验室', link: '/lab/' },
     ],
     lastUpdated: 'Last Updated',
     docsDir: 'docs',
     algolia: {
-      apiKey: '1f8d46a526f088f574c9fcd02a5fa0ce',
-      appId: 'IZ00C6K004',
-      indexName: 'weekly'
+      apiKey: '05e7de50f2b8907c01130a41131bfd87',
+      appId: 'DK2B0KFH2N',
+      indexName: 'weekly',
+      debug: false,
+      algoliaOptions: {
+        facetFilters: ''
+      }
     },
     sidebar: [
       ["/", "介绍"],

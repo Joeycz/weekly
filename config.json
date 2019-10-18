@@ -1,0 +1,24 @@
+{
+  "index_name": "weekly",
+  "start_urls": [
+    "https://joeycz.github.io/weekly/"
+  ],
+  "stop_urls": [],
+  "selectors": {
+    "lvl0": {
+      "selector": "p.sidebar-heading.open",
+      "global": true,
+      "default_value": "Documentation"
+    },
+    "lvl1": ".page h1",
+    "lvl2": ".page h2",
+    "lvl3": ".page h3",
+    "lvl4": ".page h4",
+    "lvl5": ".page h5",
+    "text": ".page p, .page ul, .page li, a.header-anchor"
+  },
+  "stop_content": [
+    "The page you requested does not exist"
+  ],
+  "objectID": "160481722"
+}
