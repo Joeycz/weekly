@@ -3,7 +3,7 @@
 这里记录过去一周看到的一些有趣的文章和项目，记在这里本来留作记录，也作为分享，希望能起到扩展知识，开阔眼界的作用。如果大家有什么好玩有趣的东西，也可以分享给我。[RSS](https://joeycz.github.io/weekly/rss.xml)欢迎订阅！
 
 ### 2019年十一月
-- [第三十七期（2019.11.01）](https://joeycz.github.io/weekly/2019/11/01.html)
+- [第三十八期（2019.11.01）](https://joeycz.github.io/weekly/2019/11/01.html)
 
 ### 2019年十月
 - [第三十七期（2019.10.25）](https://joeycz.github.io/weekly/2019/10/04.html)
