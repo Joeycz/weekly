@@ -41,52 +41,57 @@ module.exports = {
     sidebar: [
       ["/", "介绍"],
       {
-        title: "2019 年 11 月",
+        title: "2019 年 12 月",
+        collapsable: false,
+        children: readFileList('2019', '12')
+      },
+      {
+        title: "2019 年 11 月",
         collapsable: false,
         children: readFileList('2019', '11')
       },
       {
-        title: "2019 年 10 月",
+        title: "2019 年 10 月",
         collapsable: false,
         children: readFileList('2019', '10')
       },
       {
-        title: "2019 年 09 月",
+        title: "2019 年 09 月",
         collapsable: false,
         children: readFileList('2019', '09')
       },
       {
-        title: "2019 年 08 月",
+        title: "2019 年 08 月",
         collapsable: false,
         children: readFileList('2019', '08')
       },
       {
-        title: "2019 年 07 月",
-        collapsable: false,
+        title: "2019 年 07 月",
+        collapsable: true,
         children: readFileList('2019', '07')
       },
       {
-        title: "2019 年 06 月",
+        title: "2019 年 06 月",
         collapsable: true,
         children: readFileList('2019', '06')
       },
       {
-        title: "2019 年 05 月",
+        title: "2019 年 05 月",
         collapsable: true,
         children: readFileList('2019', '05')
       },
       {
-        title: "2019 年 04 月",
+        title: "2019 年 04 月",
         collapsable: true,
         children: readFileList('2019', '04')
       },
       {
-        title: "2019 年 03 月",
+        title: "2019 年 03 月",
         collapsable: true,
         children: readFileList('2019', '03')
       },
       {
-        title: "2019 年 02 月",
+        title: "2019 年 02 月",
         collapsable: true,
         children: readFileList('2019', '02')
       },
