@@ -1,4 +1,4 @@
-const {readFileList, readOldBlogs, getAllIssueDocs} = require('../../scripts/build.js');
+const {readFileList, readOldBlogs } = require('../../scripts/build.js');
 
 module.exports = {
   title: "每周记录SEE",
@@ -25,7 +25,12 @@ module.exports = {
     nav: [
       { text: '留言', link: 'https://github.com/Joeycz/weekly/issues' },
       { text: 'RSS订阅', link: 'https://joeycz.github.io/weekly/rss.xml' },
-      // { text: '实验室', link: '/lab/' },
+      {
+        text: '实验室',
+        items: [
+          { text: 'ECMAScript最新提案', link: '/lab/tc39proposals' }
+        ]
+      },
     ],
     lastUpdated: 'Last Updated',
     docsDir: 'docs',
@@ -40,6 +45,11 @@ module.exports = {
     },
     sidebar: [
       ["/", "介绍"],
+      // {
+      //   title: "2020 年 01 月",
+      //   collapsable: false,
+      //   children: readFileList('2020', '01')
+      // },
       {
         title: "2019 年 12 月",
         collapsable: false,

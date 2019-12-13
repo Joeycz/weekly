@@ -17,7 +17,10 @@ function getAllIssueDocs (year) {
   return issues;
 }
 
-const issues = getAllIssueDocs('2019')
+const issues2019 = getAllIssueDocs('2019')
+const issues2020 = getAllIssueDocs('2020')
+
+const issues = Object.assign(issues2019, issues2020)
 
 function readFileList(year, issue) {
   const fileList = [];
