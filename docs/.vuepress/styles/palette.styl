@@ -2,19 +2,22 @@
 // $textColor = red // 默认字体颜色
 // $borderColor = #eaecef // 默认边框颜色
 // $codeBgColor = #282c34 // 默认背景颜色
+
+$themeGrayColor = #f6f7f8
+$colorEee = #eeeeee
 p
 	word-break break-all
 
 .navbar
-	background-color #f6f7f8 !important
+	background-color $themeGrayColor !important
 	.links
-		background-color #f6f7f8
+		background-color $themeGrayColor
 .sidebar
-	background-color #f6f7f8 !important
+	background-color $themeGrayColor !important
 	&::-webkit-scrollbar
 		width 4px
 	&::-webkit-scrollbar-thumb
-		background #eeeeee
+		background $colorEee
 		border-radius 2px
 		display none
 

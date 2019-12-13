@@ -3,7 +3,13 @@
     class="home"
     aria-labelledby="main-title"
   >
-		<Navbar v-if="shouldShowNavbar" />
+		<Navbar v-if="shouldShowNavbar" @toggle-sidebar="toggleSidebar"/>
+
+		<DropdownTransition>
+			<div class="m-nav" v-show="isMNav">
+				<NavLinks />
+			</div>
+		</DropdownTransition>
 
     <Content class="theme-default-content custom" />
 
@@ -13,9 +19,16 @@
 <script>
 import NavLink from '@theme/components/NavLink.vue'
 import Navbar from '@theme/components/Navbar.vue'
+import NavLinks from '@theme/components/NavLinks.vue'
+import DropdownTransition from '@theme/components/DropdownTransition.vue'
 export default {
   name: 'NoSideBarLayout',
-  components: { NavLink, Navbar },
+	components: { NavLink, Navbar, NavLinks, DropdownTransition },
+	data () {
+		return {
+			isMNav: false
+		}
+	},
   computed: {
     data () {
       return this.$page.frontmatter
@@ -41,8 +54,13 @@ export default {
         || themeConfig.nav
         || this.$themeLocaleConfig.nav
       )
-    },
-  }
+		}
+	},
+	methods: {
+		toggleSidebar () {
+			this.isMNav = !this.isMNav
+		}
+	}
 }
 </script>
 
@@ -106,6 +124,8 @@ export default {
     border-top 1px solid $borderColor
     text-align center
     color lighten($textColor, 25%)
+	.m-nav
+		display none
 @media (max-width: $MQMobile)
   .home
     .features
@@ -113,6 +133,26 @@ export default {
     .feature
       max-width 100%
       padding 0 2.5rem
+		.m-nav
+			display block
+			background-color $themeGrayColor
+			border-bottom 1px solid $borderColor
+			margin 0 -1.5rem
+			transition: height 0.1s ease-out;
+			overflow hidden
+			ul
+				list-style-type none
+			.nav-links
+				padding 0.5rem 0 0.75rem 0
+				a
+					font-weight 600
+				.nav-item, .repo-link
+					display block
+					line-height 1.25rem
+					font-size 1.1em
+					padding 0.5rem 0 0.5rem 1.5rem
+				.dropdown-wrapper .nav-dropdown .dropdown-item a.router-link-active::after
+					top calc(1rem - 2px)
 @media (max-width: $MQMobileNarrow)
   .home
     padding-left 1.5rem
