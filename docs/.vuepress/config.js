@@ -23,7 +23,7 @@ module.exports = {
   themeConfig: {
     repo: "joeycz/weekly",
     nav: [
-      { text: '留言', link: 'https://github.com/Joeycz/weekly/issues' },
+      { text: '留言', link: 'https://github.com/Joeycz/weekly/issues/new' },
       { text: 'RSS订阅', link: 'https://joeycz.github.io/weekly/rss.xml' },
       {
         text: '实验室',
@@ -45,11 +45,11 @@ module.exports = {
     },
     sidebar: [
       ["/", "介绍"],
-      // {
-      //   title: "2020 年 01 月",
-      //   collapsable: false,
-      //   children: readFileList('2020', '01')
-      // },
+      {
+        title: "2020 年 01 月",
+        collapsable: false,
+        children: readFileList('2020', '01')
+      },
       {
         title: "2019 年 12 月",
         collapsable: false,
@@ -72,7 +72,7 @@ module.exports = {
       },
       {
         title: "2019 年 08 月",
-        collapsable: false,
+        collapsable: true,
         children: readFileList('2019', '08')
       },
       {
