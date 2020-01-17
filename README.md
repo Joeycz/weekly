@@ -3,6 +3,7 @@
 这里记录过去一周看到的一些有趣的文章和项目，记在这里本来留作记录，也作为分享，希望能起到扩展知识，开阔眼界的作用。有什么好玩有趣的文章或者项目，可以[分享](https://github.com/Joeycz/weekly/issues/new)给我。[欢迎订阅](https://joeycz.github.io/weekly/rss.xml)。
 
 ### 2020年1月
+- [第四十九期（2020.01.17）](https://joeycz.github.io/weekly/2020/01/03.html)
 - [第四十八期（2020.01.10）](https://joeycz.github.io/weekly/2020/01/02.html)
 - [第四十七期（2020.01.03）](https://joeycz.github.io/weekly/2020/01/01.html)
 
