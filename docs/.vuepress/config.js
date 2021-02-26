@@ -14,7 +14,7 @@ module.exports = {
     }],
     ['vuepress-plugin-rss-support', {
       site_url: 'https://joeycz.github.io/weekly',
-      filter: page => /^\/201.+/.test(page.path),
+      filter: page => /^\/20[12].+/.test(page.path),
       copyright: '每周记录SEE',
       count: 60
     }]
